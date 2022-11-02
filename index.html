@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script src="script.js" defer></script>
+                
+    <title>Document</title>
+</head>
+<body onload="initClock()">
+    <header class="header">
+        <button class="menu-icon-btn" data-menu-icon-btn>
+            <div class="menu-icon">
+                <i class="fa-regular fa-bars"></i>
+            </div>
+        </button>                    <!-- search -->
+        <div class="search">
+            <label for="">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fa-regular fa-magnifying-glass"></i>
+            </label>
+        </div>
+        <!-- use img -->
+        <div class="user">
+            <div class="profile">
+                <img src="assets/img/user.jpg" alt="">
+            </div>
+            <div class="profile-cropdown">
+                <h3>Admin<br><span>Cửa hàng đồ ăn</span></h3>
+                <!-- <li><span><i class="fa-regular fa-user-tie"></i></span><a href="#">Thông tin admin</a></li> -->
+                <!-- <li><span><i class="fa-regular fa-pen-to-square"></i></span><a href="#">Chỉnh sửa</a></li> -->
+                <li><span><i class="fa-regular fa-right-from-bracket"></i></span><a href="#">Đăng xuất</a></li>
+            </div>
+        </div>
+    </header> 
+    <div class="container">
+        <aside class="sidebar" data-sidebar>
+            <div class="top-sidebar">
+                <a href="#" class="channel-logo"><img src="assets/img/logo-copy.png" alt="Channel Logo"></a>
+                <div class="hidden-sidebar your-channel"><img src="assets/img/banner.png" style="height: 30px;" alt=""></div>
+                <!-- <div class="hidden-sidebar channel-name">Web dev simplefied</div> -->
+            </div>
+            <div class="middle-sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item active">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-house"></i></div>
+                            <div class="hidden-sidebar">Trang tổng quan</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-chart-simple"></i></div>
+                            <div class="hidden-sidebar">Thống kê doanh thu</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-users"></i></i></div>
+                            <div class="hidden-sidebar">Khách hàng</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-bags-shopping"></i></i></div>
+                            <div class="hidden-sidebar">Thêm sản phẩm</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-warehouse"></i></div>
+                            <div class="hidden-sidebar">Hàng tồn kho</div>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="bottom-sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-circle-info"></i></div>
+                            <div class="hidden-sidebar">Hỗ trợ</div>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-icon"><i class="fa-regular fa-gear"></i></i></div>
+                            <div class="hidden-sidebar">Cài đặt</div>
+                        </a>
+                    </li>   
+                </ul>  
+            </div>
+        </aside>
+        <main class="content">
+            <div class="session active">
+                <h1 class="page-title">Trang tổng quát của cửa hàng VyFood</h1>
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <h1>54</h1>
+                            <span>Khách hàng</span>
+                        </div>
+                        <div>
+                            <img src="assets/img/s1.png" alt="" style=" width: 200px;">
+                        </div>
+                        <h2>Cửa hàng của bạn có</h2>
+                        <p>Quá trời người tới thăm luôn, gke gke gke</p>
+                    </div>
+                    <div class="card-single">
+                        <div>
+                            <h1>79</h1>
+                            <span>Sản phẩm đầu ra</span>
+                        </div>
+                        <div>
+                            <img src="assets/img/s2.png" alt="" style=" width: 200px;">
+                        </div>
+                            <h2>Cửa hàng của bạn có</h2>
+                            <p>Quá trời người tới thăm luôn, gke gke gke</p>
+                    </div>
+                    <div class="card-single">
+                        <div>
+                            <h1>$6k</h1>
+                            <span>Doanh thu</span>
+                        </div>
+                        <div>
+                            <img src="assets/img/s3.png" alt="" style=" width: 200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="timer">
+                    <div class="datetime">
+                        <div class="date">
+                            <span id="dayname">Day</span>,
+                            <span id="month">month</span>
+                            <span id="daynum">00</span>,
+                            <span id="year">Year</span>
+                        </div>
+                        <div class="time">
+                            <span id="hour">00</span>:
+                            <span id="minutes">00</span>:
+                            <span id="second">00</span>
+                            <span id="period">AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="session">
+                Thong ke doanh thu
+            </div>
+            <d`iv class="session">
+                Khach hang
+            </div>
+            <div class="session">
+                Them san pham
+            </div>
+            <div class="session">
+                Ton  kho
+            </div>
+            <div class="session">
+                Ho tro
+            </div>
+            <div class="session">
+                Cai dat
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
